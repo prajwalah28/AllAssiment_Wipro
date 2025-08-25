@@ -1,0 +1,20 @@
+
+<app-home [message] = "parentmessage" (messageEvent)="receiveMessage($event)" ></app-home>
+
+<div class="container mt-3">
+  <h4>Message from Child:</h4>
+  <p class="fw-bold text-success">{{ childMessage }}</p>
+
+   <img [src]="imageUrl" width="200">
+    <button [disabled]="isDisabled">Click Me</button>
+
+      <input [(ngModel)]="name" placeholder="Enter your name">
+    <p>Your name is: {{name}}</p>
+
+
+    <h2>*ngIf Example</h2>
+<p *ngIf="show">This text is conditionally shown</p>
+
+
+<p>Uppercase: {{ fname | uppercase }}</p>
+</div>
